@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" styleClass="root-pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainScreen">
+   <children>
+      <Text fx:id="title" layoutX="171.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DeriveFX">
+         <font>
+            <Font name="Segoe UI Light" size="70.0" />
+         </font>
+      </Text>
+      <LineChart fx:id="lineGraph" layoutX="50.0" layoutY="442.0" legendVisible="false" prefHeight="345.0" prefWidth="484.0">
+         <xAxis>
+         <NumberAxis autoRanging="false" lowerBound="-10" side="BOTTOM" tickUnit="1" upperBound="10" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis autoRanging="false" lowerBound="-10" side="LEFT" tickUnit="1" upperBound="10" />
+         </yAxis>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </LineChart>
+      <HBox styleClass="nav" alignment="CENTER" layoutY="-3.0" prefHeight="62.0" prefWidth="600.0" spacing="100.0">
+         <children>
+            <Button styleClass="button" fx:id="helpButton" mnemonicParsing="false" onAction="#helpClicked" text="Help">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button styleClass="button" fx:id="settingsButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#settingsClicked" text="Settings">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button styleClass="button" fx:id="historyButton" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#historyClicked" text="History">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <Text layoutX="14.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-adjust" text="Enter an equation below:" wrappingWidth="543.9794921875">
+         <font>
+            <Font name="Segoe UI Light" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-adjust" text="Graph:" wrappingWidth="543.9794921875">
+         <font>
+            <Font name="Segoe UI Light" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-adjust" text="Your Derivative:" wrappingWidth="543.9794921875">
+         <font>
+            <Font name="Segoe UI Light" size="40.0" />
+         </font>
+      </Text>
+      <Label fx:id="textOutput" layoutX="17.0" layoutY="341.0" prefHeight="68.0" prefWidth="484.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textInput" layoutX="16.0" layoutY="212.0" prefHeight="53.0" prefWidth="455.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="32.0" />
+         </font>
+      </TextField>
+      <Button styleClass="button" fx:id="submitButton" layoutX="490.0" layoutY="224.0" mnemonicParsing="false" onAction="#submitPressed" text="Submit">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label styleClass="label-adjust" layoutX="137.0" layoutY="773.0" prefHeight="30.0" prefWidth="49.0" text="Function" />
+      <Label styleClass="label-adjust" layoutX="274.0" layoutY="771.0" prefHeight="30.0" prefWidth="56.0" text="Derivative" />
+      <Label styleClass="label-adjust" layoutX="408.0" layoutY="771.0" prefHeight="30.0" prefWidth="81.0" text="2nd Derivative" />
+      <Circle fill="#ff8c00" layoutX="199.0" layoutY="788.0" radius="6.0" stroke="#00000080" strokeType="INSIDE" />
+      <Circle fill="#bf34ff" layoutX="496.0" layoutY="786.0" radius="6.0" stroke="#00000080" strokeType="INSIDE" />
+      <Circle fill="#00c91b" layoutX="340.0" layoutY="786.0" radius="6.0" stroke="#00000080" strokeType="INSIDE" />
+      <Label fx:id="coordinateLabel" alignment="CENTER" focusTraversable="false" layoutX="255.0" layoutY="422.0" mouseTransparent="true" pickOnBounds="false" prefHeight="46.0" prefWidth="91.0" text="coords" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle fx:id="coordinateCircle" fill="WHITE" layoutX="306.0" layoutY="442.0" mouseTransparent="true" radius="4.0" stroke="#00000080" strokeType="INSIDE" visible="false" />
+   </children>
+</Pane>

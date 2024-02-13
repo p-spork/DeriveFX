@@ -1,0 +1,89 @@
+#root {
+    -fx-background-color: #495057;
+    background-color: #495057;
+}
+
+#title {
+    -fx-fill: #e9ecef;
+}
+
+#textOutput {
+    -fx-text-fill: #e9ecef;
+}
+
+.text-adjust {
+    -fx-fill: #e9ecef;
+}
+
+.output-text {
+    -fx-fill: #e9ecef;
+}
+
+.button {
+    -fx-background-color: #dee2e6;
+    -fx-text-fill: #495057;
+    -fx-border-radius:5;
+    -fx-border-color: #343a40;
+}
+
+.button:hover {
+    -fx-background-color: #adb5bd;
+    -fx-text-fill: #495057;
+    -fx-border-radius:5;
+    -fx-border-color: #343a40;
+}
+
+.derButton {
+    -fx-background-color: #f1f3f5;
+    -fx-text-fill: #495057;
+    -fx-border-radius:5;
+    -fx-border-color: #343a40;
+}
+
+.nav {
+    -fx-background-color: #343a40;
+}
+
+.label-adjust {
+    -fx-text-fill: #e9ecef;
+}
+
+.axis {
+	-fx-stroke: black;
+	-fx-fill: black;
+    -fx-font-size: 1.4em;    
+    -fx-tick-label-fill: #e9ecef;
+    -fx-tick-length: 0;
+    -fx-minor-tick-length: 0;
+}
+
+.chart-plot-background {
+    -fx-background-color: black;
+    -fx-foreground-color: white;
+    -fx-stroke: rgb(255, 255, 255);
+} 
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #adb5bd;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #adb5bd;
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+
+.chart-vertical-zero-line {
+    -fx-stroke: white;
+}
+.chart-horizontal-zero-line {
+    -fx-stroke: white;
+}
+
+.rect {
+    -fx-stroke: #10402f;
+    -fx-fill: #10402f;
+}

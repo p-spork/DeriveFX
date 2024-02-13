@@ -1,0 +1,61 @@
+#root {
+    -fx-background-color: #bee8de;
+    background-color: #bee8de;
+}
+
+.chart-vertical-zero-line {
+    -fx-stroke: white;
+}
+.chart-horizontal-zero-line {
+    -fx-stroke: white;
+}
+
+.nav {
+    -fx-background-color: #87d6c4;
+}
+
+.button {
+    -fx-background-color: #e8fff7; 
+    -fx-border-color: #000000; 
+    -fx-border-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #a2e0cb;
+    -fx-text-fill: #495057;
+    -fx-border-radius:5;
+    -fx-border-color: #343a40;
+}
+
+.derButton {
+    -fx-background-color: #f5fffb; 
+    -fx-border-color: #000000; 
+    -fx-border-radius: 5;
+}
+
+.chart-plot-background {
+    -fx-background-color: black;
+    -fx-foreground-color: white;
+    -fx-stroke: rgb(255, 255, 255);
+} 
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #898887;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #898887;
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+.axis {
+	-fx-stroke: black;
+	-fx-fill: black;
+    -fx-font-size: 1.4em;    
+    -fx-tick-label-fill: black;
+    -fx-tick-length: 0;
+    -fx-minor-tick-length: 0;
+}

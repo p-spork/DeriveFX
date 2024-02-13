@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Settings">
+   <children>
+      <Text fx:id="title" layoutX="184.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" wrappingWidth="240.958984375">
+         <font>
+            <Font name="Segoe UI Light" size="71.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="darkSetting" layoutX="178.0" layoutY="442.0" mnemonicParsing="false" onAction="#darkChecked" prefHeight="59.0" prefWidth="178.0" styleClass="label-adjust" text="Dark Mode">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="graphSetting" layoutX="178.0" layoutY="263.0" mnemonicParsing="false" onAction="#showFunction" prefHeight="51.0" prefWidth="226.0" styleClass="label-adjust" text="Graph Function">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="graph2ndSetting" layoutX="178.0" layoutY="355.0" mnemonicParsing="false" onAction="#showSecDer" prefHeight="51.0" prefWidth="287.0" styleClass="label-adjust" text="Graph 2nd Derivative">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="backButton" layoutX="415.0" layoutY="700.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="86.0" prefWidth="165.0" styleClass="button" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="saveButton" layoutX="21.0" layoutY="700.0" mnemonicParsing="false" onAction="#saveClicked" prefHeight="86.0" prefWidth="165.0" styleClass="button" text="Save" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

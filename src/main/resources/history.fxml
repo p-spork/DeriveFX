@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="History">
+   <children>
+      <Button fx:id="backButton" layoutX="415.0" layoutY="700.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="86.0" prefWidth="165.0" styleClass="button" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="title" layoutX="196.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History" wrappingWidth="209.0">
+         <font>
+            <Font name="Segoe UI Light" size="71.0" />
+         </font>
+      </Text>
+      <Button fx:id="clearButton" layoutX="21.0" layoutY="700.0" mnemonicParsing="false" onAction="#clearClicked" prefHeight="86.0" prefWidth="209.0" styleClass="button" text="Clear Save" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="107.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-adjust" text="Function">
+         <font>
+            <Font name="Segoe UI Light" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="333.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-adjust" text="Derivative">
+         <font>
+            <Font name="Segoe UI Light" size="40.0" />
+         </font>
+      </Text>
+      <!-- <Button fx:id="der1" disable="true" layoutX="333.0" layoutY="206.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="165.0" styleClass="derButton" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="der2" disable="true" layoutX="333.0" layoutY="301.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="165.0" styleClass="derButton" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="der3" disable="true" layoutX="333.0" layoutY="400.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="165.0" styleClass="derButton" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+      </Button>
+      <Button fx:id="der4" disable="true" layoutX="333.0" layoutY="497.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="165.0" styleClass="derButton" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+      </Button> -->
+      <!-- <Button fx:id="fun2" disable="true" layoutX="97.0" layoutY="301.0" mnemonicParsing="false" onAction="#functionClicked" prefHeight="86.0" prefWidth="165.0" styleClass="derButton" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="fun1" disable="true" layoutX="97.0" layoutY="206.0" mnemonicParsing="false" onAction="#functionClicked" prefHeight="86.0" prefWidth="165.0" styleClass="derButton" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="fun3" disable="true" layoutX="97.0" layoutY="400.0" mnemonicParsing="false" onAction="#functionClicked" prefHeight="86.0" prefWidth="165.0" styleClass="derButton" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="fun4" disable="true" layoutX="97.0" layoutY="497.0" mnemonicParsing="false" onAction="#functionClicked" prefHeight="86.0" prefWidth="165.0" styleClass="derButton" text="N/A" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button> -->
+      <TextArea fx:id="fun1" editable="false" layoutX="97.0" layoutY="206.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#functionClicked" prefHeight="86.0" prefWidth="165.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <TextArea fx:id="fun2" editable="false" layoutX="97.0" layoutY="301.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#functionClicked" prefHeight="86.0" prefWidth="165.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <TextArea fx:id="fun3" editable="false" layoutX="97.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#functionClicked" prefHeight="86.0" prefWidth="165.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <TextArea fx:id="fun4" editable="false" layoutX="97.0" layoutY="497.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#functionClicked" prefHeight="86.0" prefWidth="165.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+      <TextArea fx:id="der1" editable="false" layoutX="333.0" layoutY="206.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="165.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="der2" editable="false" layoutX="333.0" layoutY="301.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="165.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="der3" editable="false" layoutX="333.0" layoutY="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="165.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="der4" editable="false" layoutX="333.0" layoutY="497.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="165.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextArea>
+      <Text styleClass="text-adjust" layoutX="55.0" layoutY="652.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click a function to view it again" wrappingWidth="506.96484375">
+         <font>
+            <Font name="Segoe UI Light" size="38.0" />
+         </font>
+      </Text>
+      <Polygon fill="WHITE" layoutX="49.0" layoutY="581.0" points="-19.0, 40.0, -19.0, 74.0, -7.0, 57.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</Pane>
